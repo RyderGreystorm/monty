@@ -1,14 +1,15 @@
+#include <stdio.h>
 #include "monty.h"
 
-void pall(stack_t **stack, unsigned int line_num  __attribute__((unused)))
+/**
+ * prtStack - Prints the elements of the stack
+ * @stack: Pointer to the stack
+ * @lineNumber: Line number (unused)
+ *
+ * Return: nothing
+ */
+void prtStack(stack_t **stack, unsigned int lineNumber __attribute__((unused)))
 {
-    stack_t *current = NULL;
-    
-    current = *stack;
-
-    while (current != NULL)
-    {
-        printf("%d\n", current->n);
-        current = current->next;
-    }
+	printStack(*stack);
 }
+
