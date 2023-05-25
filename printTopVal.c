@@ -4,13 +4,13 @@
 #include "monty.h"
 
 /**
- * printTopValue - function that prints the value at the top of the stack
+ * pint - function that prints the value at the top of the stack
  * @stack: Pointer to the stack
  * @lineNumber: Line number
  *
  * Return: nothing
  */
-void printTopValue(stack_t **stack, unsigned int lineNumber)
+void pint(stack_t **stack, unsigned int lineNumber)
 {
 	/*compare two operands, top and bottom stack*/
 	if (!stack || !(*stack))

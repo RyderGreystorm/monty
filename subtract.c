@@ -5,7 +5,7 @@
 #include "monty.h"
 
 /**
- * subtract - function that subtracts the first two nodes of the stack
+ * _sub - function that subtracts the first two nodes of the stack
  * @stack: Pointer to the stack
  * @line_number: Line number for error messages
  *
@@ -16,7 +16,7 @@
  *
  * Return: nothing
  */
-void subtract(stack_t **stack, unsigned int line_number)
+void _sub(stack_t **stack, unsigned int line_number)
 {
 	int result;
 

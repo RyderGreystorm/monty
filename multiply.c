@@ -5,13 +5,13 @@
 #include "monty.h"
 
 /**
- * performMultiplication - Multiplies the top two values of the stack
+ * _mul - Multiplies the top two values of the stack
  * @stack: Pointer to the stack
  * @lineNumber: Current line number
  *
  * Return: nothing
  */
-void performMultiplication(stack_t **stack, unsigned int lineNumber)
+void _mul(stack_t **stack, unsigned int lineNumber)
 {
 	int result;
 

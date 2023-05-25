@@ -8,16 +8,16 @@
 
 #define INSTRUCTIONS              \
 	{                           \
-		{"push_element", push_element},       \
-		    {"prtStack", prtStack},   \
-		    {"printTopValue", printTopValue},   \
+		{"push", push},       \
+		    {"pall", pall},   \
+		    {"pint", pint},   \
 		    {"pop", pop},     \
 		    {"swap", swap},   \
-		    {"doNothing", doNothing},     \
-		    {"divideTopTwoValues", divideTopTwoValues},    \
-		    {"performMultiplication", performMultiplication},    \
-		    {"addTopTwoValues", addTopTwoValues},    \
-		    {"subtract", subtract},    \
+		    {"nop", nop},     \
+		    {"div", _div},    \
+		    {"mul", _mul},    \
+		    {"add", _add},    \
+		    {"sub", _sub},    \
 		    {"calculateMod", calculateMod},     \
 		    {"printChar", printChar}, \
 		    {"prt_str", prt_str},   \
@@ -78,17 +78,17 @@ stack_t *queue_node(stack_t **stack, const int n);
 void freeStack(stack_t *stack);
 size_t printStack(const stack_t *stack);
 
-void push_element(stack_t **stack, unsigned int line_number);
-void prtStack(stack_t **stack, unsigned int lineNumber);
-void printTopValue(stack_t **stack, unsigned int lineNumber);
+void push(stack_t **stack, unsigned int line_number);
+void pall(stack_t **stack, unsigned int lineNumber);
+void pint(stack_t **stack, unsigned int lineNumber);
 void swap(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_count);
-void doNothing(stack_t **stack, unsigned int lineNumber);
+void nop(stack_t **stack, unsigned int lineNumber);
 
-void divideTopTwoValues(stack_t **stack, unsigned int lineNumber);
-void addTopTwoValues(stack_t **stack, unsigned int lineNumber);
-void subtract(stack_t **stack, unsigned int line_number);
-void performMultiplication(stack_t **stack, unsigned int lineNumber);
+void _div(stack_t **stack, unsigned int lineNumber);
+void _add(stack_t **stack, unsigned int lineNumber);
+void _sub(stack_t **stack, unsigned int line_number);
+void _mul(stack_t **stack, unsigned int lineNumber);
 void calculateMod(stack_t **stack, unsigned int lineNumber);
 
 void printChar(stack_t **stack, unsigned int lineNumber);

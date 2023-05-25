@@ -5,7 +5,7 @@
 #include "monty.h"
 
 /**
- * push_element - function that pushes an element onto the stack
+ * push - function that pushes an element onto the stack
  * @stack: Pointer to the stack
  * @line_number: Line number for error messages
  *
@@ -21,7 +21,7 @@
  *
  * Return: nothing
  */
-void push_element(stack_t **stack, unsigned int line_number)
+void push(stack_t **stack, unsigned int line_number)
 {
 	char *argument = global.argument;
 

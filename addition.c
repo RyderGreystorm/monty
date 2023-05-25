@@ -5,13 +5,13 @@
 #include "monty.h"
 
 /**
- * addTopTwoValues - function that adds the first two nodes of the stack
+ * _add - function that adds the first two nodes of the stack
  * @stack: Pointer to the stack
  * @lineNumber: Current line number
  *
  * Return: nothing
 */
-void addTopTwoValues(stack_t **stack, unsigned int lineNumber)
+void _add(stack_t **stack, unsigned int lineNumber)
 {
 	int result;
 

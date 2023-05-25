@@ -5,13 +5,13 @@
 #include "monty.h"
 
 /**
-* divideTopTwoValues - Divides the second top value by the top value
+* _div - Divides the second top value by the top value
 * @stack: Pointer to the stack
 * @lineNumber: Current line number
 *
 * Return: nothing
 */
-void divideTopTwoValues(stack_t **stack, unsigned int lineNumber)
+void _div(stack_t **stack, unsigned int lineNumber)
 {
 	int result;
 
